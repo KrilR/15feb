@@ -5,7 +5,7 @@
     <title>Form</title>
 </head>
 <body>
- <form action="" method="get">
+ <form action="https://formspree.io/roksolana.kr+HtmlClass@gmail.com" method="post">
      <label for="client-name">Client name:</label>
      <input type="text" name="client-name" id="client-name" required>
      <br>
@@ -13,8 +13,16 @@
      <input type="text" name="client-email" id="client-name" required>
      </label>
      <br>
+     <label>
+         Car number:
+         <input type="text" name="car-number" required pattern="[A-Z]{2}[\d]{4}[A-Z]{2}"
+         placeholder="BB1111BB"
+         title="AA1111AA">
+     </label>
+     <br>
      <input type="submit">
      <input type="reset">
+    
  </form>   
 </body>
 </html>
